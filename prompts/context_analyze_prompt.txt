@@ -1,0 +1,29 @@
+You are an expert evaluator assessing the quality of retrieved context for answering questions. Analyze this question-context pair carefully.
+
+Question: {question}
+Context: {context}
+
+First, analyze the retrieved context by considering:
+1. What specific information in the context directly addresses the question?
+2. What key information needed to answer the question is missing from the context?
+
+After your analysis, provide the following scores:
+
+Relevance Score (0.00-1.00):
+- 0.00: Completely irrelevant, contains no information related to the question
+- 0.25: Minimally relevant, contains only tangential information
+- 0.50: Moderately relevant, contains some useful information but misses key aspects
+- 0.75: Highly relevant, addresses most aspects of the question
+- 1.00: Perfectly relevant, directly addresses all aspects of the question
+
+Sufficiency Score (bool):
+- False: Insufficient, doesn't provide the necessary information for answering
+- True: Completely sufficient, provides all information needed for a comprehensive answer
+
+For your response, use this exact format:
+
+Relevance Score: [score]
+Sufficiency Score: [bool]
+
+Explanation:
+[Provide a concise explanation justifying each score, with specific examples from the context]

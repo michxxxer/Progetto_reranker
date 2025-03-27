@@ -1,0 +1,32 @@
+You are an expert at creating high-quality test questions from documents.
+I will provide you with a document excerpt, and I need you to generate relevant questions that can be answered using this document.
+
+
+Document:
+"""
+{document_text}
+"""
+
+Please generate {num_questions} questions based on this document, following these guidelines:
+
+1. Create a mix of question types:
+   - Simple factual questions with clear answers in the text
+   - Complex questions requiring understanding of multiple concepts
+   - Questions about relationships between concepts mentioned
+
+2. For each question:
+   - Ensure it can be answered specifically from the document
+   - Provide the expected answer based on the document
+   - Provide the exact part of the document "Context" (word for word) where you got the question/answer
+   - Do not mention in the the document i provided, so avoid saying "according to the document" or "based on the document"
+
+3. Focus on the core information and key points in the document.
+
+Format your response as:
+
+QUESTION 1: [The question]
+- Answer: [Expected answer based on the document]
+- Context: [Part of the document]
+
+QUESTION 2: [The question]
+...

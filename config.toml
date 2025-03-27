@@ -1,0 +1,22 @@
+[upload]
+file_path = "./path_pdf.pdf"
+index_name = "name"
+
+[elastic]
+url ="localhost:9200"
+user = "elastic"
+password = "password (not the actual password)"
+
+[embedding]
+model = "text-embedding-3-large"
+ranker = "rerank-2"
+ranked = 0
+
+
+[textsplitter]
+chunk_size = 1500
+chunk_overlap = 200
+add_start_index= 1
+
+[csv]
+file_path = "./questions.csv"
